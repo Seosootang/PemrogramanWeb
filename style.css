@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: #002f6c;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .logo {
+    width: 70px;
+    height: auto;
+    margin-left: 150px;
+    margin-right: auto ;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 420px
+}
+
+.logo-text .name {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 2px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.logo-text .title {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin-right: 175px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #002f6c;
+    height: 70vh;
+}
+
+.content {
+    display: flex;
+    position: static;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    margin-right: 240px;
+}
+
+.text-box {
+    background-color: #5cb5ff;
+    padding: 50px ;
+    color: #fff;
+    border-radius: 10px;
+    position: relative;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.text-box h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color:#333;
+}
+
+.text-box p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.text-box .book {
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.image-box {
+    width: 3000px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4e4f1;
+    border-radius: 10px;
+    position: relative;
+    left: 190px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.image-box img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.artists {
+    background-color: #f4f4f9;
+    padding: 40px;
+    text-align: center;
+    opacity: 1;
+    transform: translateY(20px);
+    height: auto;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+    animation: fadeInUp 1s ease-in-out;
+}
+.artists .logo {
+    width: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto ;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.artists h2 {
+    margin-bottom: 10px;
+    color: #333;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.artists h1 {
+    margin-bottom: 50px;
+    font-size: 2em;
+    color: #800000;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.artist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.artist-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    text-align: center;
+}
+
+.artist-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.artist-card h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.read-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.footer {
+    background-color: #002f6c;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-links,
+.footer-social {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    margin: 10px 0;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover,
+.footer-social ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #ffffff;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 767px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        margin: 0 auto;
+    }
+
+    .navbar ul {
+        margin-right: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-box {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .logo-text {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .about-us {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .text-box {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .image-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .artist-grid {
+        grid-template-columns: 1fr;
+    }
+}
